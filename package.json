@@ -1,0 +1,20 @@
+{
+  "name": "dqrcodes",
+  "description": "Generate QR codes defined in the 'dqrcodes.json'",
+  "version": "1.0.0",
+  "homepage": "http://github.com/dnode/dqrcodes",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bin": {
+    "dqrcodes": "src/cli.js"
+  },
+  "main": "src/lib.js",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "qr-image": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dnode/dqrcodes.git"
+  }
+}
