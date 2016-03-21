@@ -1,7 +1,7 @@
 {
   "name": "dqrcodes",
   "description": "Generate QR codes defined in the 'dqrcodes.json'",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "http://github.com/dnode/dqrcodes",
   "license": "MIT",
   "readmeFilename": "README.md",

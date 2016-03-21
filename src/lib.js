@@ -8,7 +8,6 @@ const qr = require('qr-image');
 module.exports = (configs) => {
   for (let config of configs) {
     mkdirp.sync(dirname(config.path));
-    var qr_svg = qr.image(config.url);
-    qr_svg.pipe(fs.createWriteStream(config.path));
+    qr.image(config.url, config.options).pipe(fs.createWriteStream(config.path));
   }
 };
