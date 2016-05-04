@@ -6,7 +6,7 @@ const mkdirp = require('mkdirp');
 const qr = require('qr-image');
 
 module.exports = (configs) => {
-  for (let config of configs) {
+  for (const config of configs) {
     mkdirp.sync(dirname(config.path));
     qr.image(config.url, config.options).pipe(fs.createWriteStream(config.path));
   }
